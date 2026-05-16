@@ -35,6 +35,7 @@ const Hero: React.FC = () => {
               height={128}
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
+              priority
             />
           </div>
         </motion.div>
