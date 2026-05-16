@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="relative mx-auto w-28 h-28 md:w-40 md:h-60"
         >
-          <div className="absolute inset-0 rounded-full border-2 border-primary/80 shadow-[0_0_20px_rgba(139,92,246,0.2)]" />
+          <div className="absolute inset-0 rounded-full border-2 border-primary shadow-[0_0_20px_rgba(139,92,246,0.2)]" />
           <div className="absolute inset-1 rounded-full overflow-hidden bg-card">
             <Image
               src="/next.jpeg"
