@@ -74,11 +74,21 @@ export const PROJECTS: Project[] = [
           title: "Overview",
           items: ["Search", "Sponsors", "All Event", "Carousel", "Pagination"]
         },
-        "Skleton section", 
+        "Skeleton section", 
         "Footer",
         "Navbar (Overview, Explore, Insight, Contact)" 
       ],
-      be: []
+      be: [],
+      allLib: [
+        {
+          title: "Frontend",
+          items: ["Next.js", "@heroui/react", "@coreui/react", "Framer Motion", "React Icons", "Radix UI", "TailwindCSS", "Contentful (CMS)", "React Hook Form", "Zod", "Recharts", "ApexCharts", "React Markdown"]
+        },
+        {
+          title: "Development",
+          items: ["TypeScript", "ESLint", "Resend", "@emailjs/browser"]
+        }
+      ]
     }
   },
   {
@@ -89,6 +99,10 @@ export const PROJECTS: Project[] = [
     tags: ["Fullstack", "Next.js", "Express.js"],
     githubUrl: "https://github.com/rohmanNEXT/movie-next",
     demoUrl: "http://testing-348.my.id",
+    testLogin: {
+      email: "user@user.com",
+      password: "user123"
+    },
     features: {
       fe: [
         {
@@ -101,7 +115,7 @@ export const PROJECTS: Project[] = [
           items: ["Admin (Superadmin, Admin)", "Auth (Redirect ke Login)"]
         },
         "Subscribe (plan Essential, plan Professional, plan Ultimate)",
-        "Saldo (top up, trarik tunai, history transaksi, komisi referal)",
+        "Saldo (top up, tarik tunai, history transaksi, komisi referral)",
         "Movie/[id]",
         "All Movie",
         "Toast",
@@ -131,6 +145,20 @@ export const PROJECTS: Project[] = [
           title: "Helpers",
           items: ["Jwt (Create Token)", "Multer (Uploader)", "Email (resetPass.hbs)", "Crypto (ID, Reset Password)"]
         }
+      ],
+      allLib: [
+        {
+          title: "Frontend",
+          items: ["Next.js", "Zustand", "Formik", "Yup", "Axios", "TailwindCSS", "Sonner"]
+        },
+        {
+          title: "Backend",
+          items: ["Express", "Prisma", "PostgreSQL", "JWT", "Bcrypt", "Nodemailer", "Multer"]
+        },
+        {
+          title: "Development",
+          items: ["TypeScript", "ESLint", "Turbo", "Json-Server", "Express Rate Limit"]
+        }
       ]
     }
   },
@@ -151,7 +179,17 @@ export const PROJECTS: Project[] = [
         "ToDo Harian (Belum Selesai, Selesai)",
         "Hapus ToDo"
       ],
-      be: []
+      be: [],
+      allLib: [
+        {
+          title: "Frontend",
+          items: ["React 19", "Vite", "TailwindCSS 4", "React Icons", "Motion"]
+        },
+        {
+          title: "Development", 
+          items: ["TypeScript"]
+        }
+      ]
     }
   }
 ];

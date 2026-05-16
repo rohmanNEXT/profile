@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
       >
         <div className="space-y-2">
           <h2 className="text-2xl md:text-3xl font-medium text-foreground">
-            Projects Testing
+            Projects
           </h2>
           <div className="w-16 h-1 bg-primary/40 mx-auto rounded-full" />
         </div>
@@ -111,7 +111,7 @@ const Projects: React.FC = () => {
                   className="col-span-2 lg:col-span-1 flex items-center justify-center gap-2 py-2.5 bg-primary hover:bg-primary/90 text-black rounded-full text-[10px] font-medium transition-all shadow-xl shadow-primary/10 cursor-pointer"
                 >
                   <FaInfoCircle size={12} />
-                  Fitur Detail
+                  Fitur
                 </button>
               </div>
             </div>

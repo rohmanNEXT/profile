@@ -179,10 +179,10 @@ const Contact: React.FC = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full md:w-auto md:px-10 bg-primary hover:bg-primary/90 text-black py-3.5 rounded-full font-medium transition-all flex items-center justify-center gap-4 shadow-2xl shadow-primary/20 active:scale-95 text-sm disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+              className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-black px-5 py-2.5 rounded-full text-xs font-medium transition-all shadow-lg shadow-primary/20 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer w-full md:w-auto justify-center"
             >
               <FaPaperPlane
-                size={18}
+                size={14}
                 className={isSubmitting ? "animate-pulse" : ""}
               />
               {isSubmitting ? "Sending..." : "Send Message"}

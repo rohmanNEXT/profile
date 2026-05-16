@@ -34,7 +34,7 @@
   --foreground: #f7fafc;
   --card: rgba(15, 23, 42, 0.8);
   --card-foreground: #f8fafc;
-  --primary: #a78bfa;
+  --primary: rgb(167, 139, 250);
   --primary-foreground: #0f172a;
   --muted: #1e293b;
   --muted-foreground: rgb(82, 99, 122);

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { FaTimes, FaChevronRight } from "react-icons/fa";
+import { FaTimes, FaChevronRight, FaExternalLinkAlt } from "react-icons/fa";
 import { BsDot } from "react-icons/bs";
 import { Project } from "../lib/types";
 
@@ -31,12 +31,37 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
           <h2 className="text-xl md:text-2xl font-medium text-foreground">
             {project.title}
           </h2>
-          <p className="text-muted-foreground text-xs">Fitur Detail </p>
+          <p className="text-muted-foreground text-[10px] uppercase tracking-[0.2em] font-semibold opacity-50">Fitur</p>
           <div className="w-12 h-1 bg-primary/40 mx-auto rounded-full mt-4" />
         </div>
 
+
         <div className="max-h-[400px] overflow-y-auto pr-2 mb-1 mx-1 detail-scrollbar">
-          <div className={`grid gap-6 ${project.features?.be && project.features.be.length > 0 ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1"}`}>
+          {project.testLogin && (
+            <div className="mb-10 p-5 rounded-4xl bg-white/5 border border-white/10 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-3xl group-hover:bg-primary/10 transition-colors duration-500" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10 mx-2">
+                <div className="space-y-3">
+                  <h3 className="text-sm font-medium text-primary uppercase tracking-wider">Test login</h3>
+                  <div className="pl-4 space-y-2">
+                    <div className="flex flex-col gap-1">
+                      <span className="text-[10px] text-muted-foreground uppercase tracking-wider font-semibold opacity-70">Email</span>
+                      <span className="text-sm text-foreground/80 font-medium tracking-tight">{project.testLogin.email}</span> 
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-3 md:pt-8">
+                  <div className="pl-4 space-y-2">
+                    <div className="flex flex-col gap-1">
+                      <span className="text-[10px] text-muted-foreground uppercase tracking-wider font-semibold opacity-70">Password</span>
+                      <span className="text-sm text-foreground/80 font-medium tracking-tight">{project.testLogin.password}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          <div className={`grid gap-6 ${(project.features?.be && project.features.be.length > 0) || (project.features?.allLib && project.features.allLib.length > 0) ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1"}`}>
           <div className="space-y-3">
             <h3 className="text-sm font-medium text-primary uppercase tracking-wider">Frontend</h3>
             <ul className="space-y-2">
@@ -77,6 +102,43 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
               <h3 className="text-sm font-medium text-primary uppercase tracking-wider">Backend</h3>
               <ul className="space-y-2">
                 {project.features?.be.map((feat, idx) => {
+                  if (typeof feat === "string") {
+                    return (
+                      <li key={idx} className="text-xs text-muted-foreground">
+                        <div className="flex items-center gap-2">
+                          <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
+                          <span>{feat}</span>
+                        </div>
+                      </li>
+                    );
+                  } else {
+                    return (
+                      <li key={idx} className="text-xs text-muted-foreground space-y-1">
+                        <div className="flex items-center gap-2">
+                          <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
+                          <span className="font-medium text-muted-foreground">{feat.title}</span>
+                        </div>
+                        <ul className="pl-4 space-y-1">
+                          {feat.items.map((item, iIdx) => (
+                            <li key={iIdx} className="text-xs text-muted-foreground flex items-center gap-2">
+                              <BsDot size={12} className="text-muted-foreground/40 flex-shrink-0" />
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                    );
+                  }
+                })}
+              </ul>
+            </div>
+          )}
+
+          {project.features?.allLib && project.features.allLib.length > 0 && (
+            <div className="space-y-3">
+              <h3 className="text-sm font-medium text-primary uppercase tracking-wider">All Library</h3>
+              <ul className="space-y-2">
+                {project.features?.allLib.map((feat, idx) => {
                   if (typeof feat === "string") {
                     return (
                       <li key={idx} className="text-xs text-muted-foreground">

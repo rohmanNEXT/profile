@@ -17,9 +17,14 @@ export interface Project {
   tags: string[];
   githubUrl: string;
   demoUrl: string;
+  testLogin?: {
+    email: string;
+    password: string;
+  };
   features?: {
     fe: (string | FeatureCategory)[];
     be: (string | FeatureCategory)[];
+    allLib?: (string | FeatureCategory)[];
   };
 }
 
