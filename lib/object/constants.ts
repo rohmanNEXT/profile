@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/rohmanNEXT/movie-next",
     demoUrl: "http://testing-348.my.id",
     testLogin: {
-      email: "user@user.com",
+      email: "user@gmail.com",
       password: "user123"
     },
     features: {
