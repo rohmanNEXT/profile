@@ -1,0 +1,118 @@
+"use client";
+
+import React from "react";
+import { motion } from "motion/react";
+import { FaTimes, FaChevronRight } from "react-icons/fa";
+import { BsDot } from "react-icons/bs";
+import { Project } from "../lib/types";
+
+interface ProjectDetailModalProps {
+  onClose: () => void;
+  project: Project;
+}
+
+const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, project }) => {
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/60 backdrop-blur-xl overflow-y-auto">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9, y: 20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.9, y: 20 }}
+        className="glass p-6 md:p-10 rounded-4xl max-w-xl w-full relative shadow-2xl"
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-9 right-9 p-2 hover:bg-white/10 rounded-full transition-colors text-muted-foreground hover:text-foreground cursor-pointer"
+        >
+          <FaTimes size={18} />
+        </button>
+
+        <div className="text-center space-y-2 mb-8">
+          <h2 className="text-xl md:text-2xl font-medium text-foreground">
+            {project.title}
+          </h2>
+          <p className="text-muted-foreground text-xs">Fitur Detail </p>
+          <div className="w-12 h-1 bg-primary/40 mx-auto rounded-full mt-4" />
+        </div>
+
+        <div className="max-h-[400px] overflow-y-auto pr-2 mb-1 mx-1 detail-scrollbar">
+          <div className={`grid gap-6 ${project.features?.be && project.features.be.length > 0 ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1"}`}>
+          <div className="space-y-3">
+            <h3 className="text-sm font-medium text-primary uppercase tracking-wider">Frontend</h3>
+            <ul className="space-y-2">
+              {project.features?.fe.map((feat, idx) => {
+                if (typeof feat === "string") {
+                  return (
+                    <li key={idx} className="text-xs text-muted-foreground">
+                      <div className="flex items-center gap-2">
+                        <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
+                        <span>{feat}</span>
+                      </div>
+                    </li>
+                  );
+                } else {
+                  return (
+                    <li key={idx} className="text-xs text-muted-foreground space-y-1">
+                      <div className="flex items-center gap-2">
+                        <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
+                        <span className="font-medium text-muted-foreground">{feat.title}</span>
+                      </div>
+                      <ul className="pl-4 space-y-1">
+                        {feat.items.map((item, iIdx) => (
+                          <li key={iIdx} className="text-xs text-muted-foreground flex items-center gap-2">
+                            <BsDot size={12} className="text-muted-foreground/40 flex-shrink-0" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  );
+                }
+              })}
+            </ul>
+          </div>
+
+          {project.features?.be && project.features.be.length > 0 && (
+            <div className="space-y-3">
+              <h3 className="text-sm font-medium text-primary uppercase tracking-wider">Backend</h3>
+              <ul className="space-y-2">
+                {project.features?.be.map((feat, idx) => {
+                  if (typeof feat === "string") {
+                    return (
+                      <li key={idx} className="text-xs text-muted-foreground">
+                        <div className="flex items-center gap-2">
+                          <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
+                          <span>{feat}</span>
+                        </div>
+                      </li>
+                    );
+                  } else {
+                    return (
+                      <li key={idx} className="text-xs text-muted-foreground space-y-1">
+                        <div className="flex items-center gap-2">
+                          <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
+                          <span className="font-medium text-muted-foreground">{feat.title}</span>
+                        </div>
+                        <ul className="pl-4 space-y-1">
+                          {feat.items.map((item, iIdx) => (
+                            <li key={iIdx} className="text-xs text-muted-foreground flex items-center gap-2">
+                              <BsDot size={12} className="text-muted-foreground/40 flex-shrink-0" />
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                    );
+                  }
+                })}
+              </ul>
+            </div>
+          )}
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
+export default ProjectDetailModal;
