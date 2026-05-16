@@ -140,7 +140,7 @@ const CVPage: React.FC = () => {
                       <li>Preview: {project.demoUrl}</li>
                       <li>GitHub: {project.githubUrl}</li>
                       {project.testLogin && (
-                        <li className="pt-2">
+                        <li>
                           <span className="font-medium text-white">Test login:</span>
                           <ul className="list-disc ml-5 mt-1 space-y-1">
                             <li>Email: {project.testLogin.email}</li>
