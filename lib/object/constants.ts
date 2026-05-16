@@ -51,47 +51,7 @@ export const SKILLS: { category: string; items: Skill[] }[] = [
 ];
 
 export const PROJECTS: Project[] = [
-  {
-    title: "Evently CMS",
-    description:
-      "A comprehensive event management system with a powerful CMS for organizing and tracking events.",
-    image: "https://picsum.photos/seed/evently/800/600",
-    tags: ["Frontend", "Next.js"],
-    githubUrl: "https://github.com/rohmanNEXT/EventlyCms",
-    demoUrl: "https://evently-cms.vercel.app",
-    features: {
-      fe: [
-        {
-          title: "Explore Menu",
-          items: ["Search", "Filtering Data (Category, Location)", "Result Dari Search", "Carousel", "Pagination", "Explore/[id]"]
-        },
-        {
-          title: "Insights Menu",
-          items: ["Visitors", "Visit", "Page Views", "Visual Grafik (24 Jam, 7 Hari, 30 Hari)"]
-        },
-        "Contact Form",
-        {
-          title: "Overview",
-          items: ["Search", "Sponsors", "All Event", "Carousel", "Pagination"]
-        },
-        "Skeleton section", 
-        "Footer",
-        "Navbar (Overview, Explore, Insight, Contact)" 
-      ],
-      be: [],
-      allLib: [
-        {
-          title: "Frontend",
-          items: ["Next.js", "@heroui/react", "@coreui/react", "Framer Motion", "React Icons", "Radix UI", "TailwindCSS", "Contentful (CMS)", "React Hook Form", "Zod", "Recharts", "ApexCharts", "React Markdown"]
-        },
-        {
-          title: "Development",
-          items: ["TypeScript", "ESLint", "Resend", "@emailjs/browser"]
-        }
-      ]
-    }
-  },
-  {
+   {
     title: "Netflix Clone",
     description:
       "A high-fidelity Netflix clone featuring movie browsing, trailers, and a responsive user interface.",
@@ -158,6 +118,46 @@ export const PROJECTS: Project[] = [
         {
           title: "Development",
           items: ["TypeScript", "ESLint", "Turbo", "Json-Server", "Express Rate Limit"]
+        }
+      ]
+    }
+  }, 
+  {
+    title: "Evently CMS",
+    description:
+      "A comprehensive event management system with a powerful CMS for organizing and tracking events.",
+    image: "https://picsum.photos/seed/evently/800/600",
+    tags: ["Frontend", "Next.js"],
+    githubUrl: "https://github.com/rohmanNEXT/EventlyCms",
+    demoUrl: "https://evently-cms.vercel.app",
+    features: {
+      fe: [
+        {
+          title: "Explore Menu",
+          items: ["Search", "Filtering Data (Category, Location)", "Result Dari Search", "Carousel", "Pagination", "Explore/[id]"]
+        },
+        {
+          title: "Insights Menu",
+          items: ["Visitors", "Visit", "Page Views", "Visual Grafik (24 Jam, 7 Hari, 30 Hari)"]
+        },
+        "Contact Form",
+        {
+          title: "Overview",
+          items: ["Search", "Sponsors", "All Event", "Carousel", "Pagination"]
+        },
+        "Skeleton section", 
+        "Footer",
+        "Navbar (Overview, Explore, Insight, Contact)" 
+      ],
+      be: [],
+      allLib: [
+        {
+          title: "Frontend",
+          items: ["Next.js", "@heroui/react", "@coreui/react", "Framer Motion", "React Icons", "Radix UI", "TailwindCSS", "Contentful (CMS)", "React Hook Form", "Zod", "Recharts", "ApexCharts", "React Markdown"]
+        },
+        {
+          title: "Development",
+          items: ["TypeScript", "ESLint", "Resend", "@emailjs/browser"]
         }
       ]
     }

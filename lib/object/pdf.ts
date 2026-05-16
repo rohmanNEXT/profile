@@ -41,9 +41,8 @@ export const EXPERIENCES_2: Experience[] = [
 ];
 
 export const REFERENCES: Reference[] = [
-  { label: "Portfolio", url: "https://next-the-profile.vercel.app" },
   { label: "GitHub", url: "https://github.com/rohmanNEXT" },
   { label: "LinkedIn", url: "https://www.linkedin.com/in/muhammad-rachman-7b61b3276" },
-  { label: "Website", url: "https://rohman-profile.vercel.app" },
+  { label: "Portfolio", url: "https://rohman-profile.vercel.app" },
 ];
 
