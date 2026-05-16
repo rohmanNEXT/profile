@@ -140,12 +140,12 @@ const CVPage: React.FC = () => {
                       <li>Preview: {project.demoUrl}</li>
                       <li>GitHub: {project.githubUrl}</li>
                       {project.testLogin && (
-                        <li className="list-none pt-2">
-                          <div className="font-medium text-white mb-1">Test login</div>
-                          <div className="pl-3 space-y-0.5">
-                            <div>Email: {project.testLogin.email}</div>
-                            <div>Password: {project.testLogin.password}</div>
-                          </div>
+                        <li className="pt-2">
+                          <span className="font-medium text-white">Test login:</span>
+                          <ul className="list-disc ml-5 mt-1 space-y-1">
+                            <li>Email: {project.testLogin.email}</li>
+                            <li>Password: {project.testLogin.password}</li>
+                          </ul>
                         </li>
                       )}
                     </ul>
