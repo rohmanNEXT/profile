@@ -31,7 +31,7 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
           <h2 className="text-xl md:text-2xl font-medium text-foreground">
             {project.title}
           </h2>
-          <p className="text-muted-foreground text-[10px] uppercase tracking-[0.2em] font-semibold opacity-50">Fitur</p>
+          <p className="text-muted-foreground text-[10px] uppercase tracking-[0.2em] font-bold opacity-50">Fitur</p>
           <div className="w-12 h-1 bg-primary/40 mx-auto rounded-full mt-4" />
         </div>
 
