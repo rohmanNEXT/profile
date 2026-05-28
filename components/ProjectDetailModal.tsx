@@ -13,12 +13,12 @@ interface ProjectDetailModalProps {
 
 const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, project }) => {
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center backdrop-blur-[8px] p-6 bg-black/60 overflow-y-auto">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center backdrop-blur-sm p-6 bg-black/60 overflow-y-auto">
       <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9, y: 20 }}
-        className="glass backdrop-blur-[8px] p-6 md:p-10 rounded-4xl max-w-xl w-full relative shadow-2xl"
+        className="glass backdrop-blur-sm p-6 md:p-10 rounded-4xl max-w-xl w-full relative shadow-2xl"
       >
         <button
           onClick={onClose}
