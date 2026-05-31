@@ -46,7 +46,7 @@ const Skills: React.FC = () => {
                     {skill.icon}
                   </div>
                   <div className="text-center relative z-10">
-                    <p className="font-medium text-[12px] mb-2 tracking-tight">
+                    <p className="font-medium text-[10px] mb-2 tracking-tight">
                       {skill.name}
                     </p>
                     <p className="text-[10px] text-primary font-medium bg-primary/10 px-2 py-0.5 rounded-full border border-primary/30 uppercase tracking-widest">
