@@ -50,7 +50,7 @@ const Window: React.FC<WindowProps> = ({ isOpen, onClose }) => {
               }`}
           >
             <Sun size={18} />
-            <span className="hidden">Light </span>
+            <span>Light </span>
           </button> 
           <button
             onClick={() => setTheme("dark")}
@@ -60,7 +60,7 @@ const Window: React.FC<WindowProps> = ({ isOpen, onClose }) => {
               }`}
           >
             <Moon size={18} />
-            <span className="hidden">Dark </span>
+            <span>Dark </span>
           </button>
         </div> 
         </div>
