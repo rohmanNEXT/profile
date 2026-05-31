@@ -51,8 +51,7 @@ const Window: React.FC<WindowProps> = ({ isOpen, onClose }) => {
           >
             <Sun size={18} />
             <span className="hidden">Light </span>
-          </button>
-
+          </button> 
           <button
             onClick={() => setTheme("dark")}
             className={`flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full transition-all duration-500 font-medium text-[10px] sm:text-xs md:text-sm tracking-widest cursor-pointer ${theme === "dark"
@@ -63,7 +62,8 @@ const Window: React.FC<WindowProps> = ({ isOpen, onClose }) => {
             <Moon size={18} />
             <span className="hidden">Dark </span>
           </button>
-        </div> </div>
+        </div> 
+        </div>
       </motion.div>
     </div>
   );
