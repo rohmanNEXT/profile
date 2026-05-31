@@ -50,8 +50,7 @@ const Window: React.FC<WindowProps> = ({ isOpen, onClose }) => {
               }`}
           >
             <Sun size={18} />
-            <span className="hidden sm:inline">Light</span>
-            <span className="sm:hidden">Lt</span>
+            <span className="hidden">Light </span>
           </button>
 
           <button
@@ -62,8 +61,7 @@ const Window: React.FC<WindowProps> = ({ isOpen, onClose }) => {
               }`}
           >
             <Moon size={18} />
-            <span className="hidden sm:inline">Dark</span>
-            <span className="sm:hidden">Dk</span>
+            <span className="hidden">Dark </span>
           </button>
         </div> </div>
       </motion.div>
