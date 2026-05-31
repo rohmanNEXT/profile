@@ -45,7 +45,7 @@ const Window: React.FC<WindowProps> = ({ isOpen, onClose }) => {
           <button
             onClick={() => setTheme("light")}
             className={`flex items-center gap-2 px-8 py-4 rounded-full transition-all duration-500 font-medium text-sm uppercase tracking-widest cursor-pointer ${theme === "light"
-                ? "bg-primary text-black shadow-2xl shadow-primary/40 scale-105"
+                ? "bg-primary text-primary-foreground shadow-2xl shadow-primary/40 scale-105"
                 : "text-muted-foreground hover:text-foreground"
               }`}
           >
@@ -56,7 +56,7 @@ const Window: React.FC<WindowProps> = ({ isOpen, onClose }) => {
           <button
             onClick={() => setTheme("dark")}
             className={`flex items-center gap-2 px-8 py-4 rounded-full transition-all duration-500 font-medium text-sm uppercase tracking-widest cursor-pointer ${theme === "dark"
-                ? "bg-primary text-black shadow-2xl shadow-primary/40 scale-105"
+                ? "bg-primary text-primary-foreground shadow-2xl shadow-primary/40 scale-105"
                 : "text-muted-foreground hover:text-foreground"
               }`}
           >

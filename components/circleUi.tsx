@@ -30,7 +30,7 @@ const CircleUi: React.FC<CircleUiProps> = ({
     />
 
     <text
-      className={`uppercase tracking-[0.2em] fill-muted-foreground font-medium ${
+      className={`uppercase tracking-[0.2em] fill-foreground font-medium ${
         largeCircle ? "text-[8px]" : "text-[6px]"
       }`}
     >

@@ -91,7 +91,7 @@ const Hero: React.FC = () => {
                   .getElementById("experience")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-full text-xs font-medium transition-all shadow-lg shadow-primary/20 cursor-pointer"
+              className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2.5 rounded-full text-xs font-medium transition-all shadow-lg shadow-primary/20 cursor-pointer"
             >
               <FaThLarge size={14} />
               My Project
@@ -110,7 +110,7 @@ const Hero: React.FC = () => {
                 .getElementById("contact")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-8 py-2.5 rounded-full text-xs font-medium transition-all shadow-lg shadow-primary/20 cursor-pointer"
+            className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-2.5 rounded-full text-xs font-medium transition-all shadow-lg shadow-primary/20 cursor-pointer"
           >
             <FaEnvelope size={14} />
             Contact Me
