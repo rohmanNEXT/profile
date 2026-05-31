@@ -127,13 +127,13 @@ const Contact: React.FC = () => {
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-muted-foreground ml-1 mb-1">
+                <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-foreground/80 ml-1 mb-1">
                   Name
                 </div>
                 <input
                   {...register("name")}
                   placeholder="Your name"
-                  className="w-full bg-card border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all placeholder:text-muted-foreground/30 text-base"
+                  className="w-full bg-card border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all placeholder:text-foreground/40 text-base"
                 />
                 {errors.name && (
                   <p className="text-xs text-red-500 ml-1">
@@ -143,13 +143,13 @@ const Contact: React.FC = () => {
               </div>
 
               <div className="space-y-3">
-                <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-muted-foreground ml-1 mb-1">
+                <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-foreground/80 ml-1 mb-1">
                   Email
                 </div>
                 <input
                   {...register("email")}
                   placeholder="your@example.com"
-                  className="w-full bg-card border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all placeholder:text-muted-foreground/30 text-base"
+                  className="w-full bg-card border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all placeholder:text-foreground/40 text-base"
                 />
                 {errors.email && (
                   <p className="text-xs text-red-500 ml-1">
@@ -160,14 +160,14 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="space-y-2">
-              <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-muted-foreground ml-1 mb-1">
+              <div className="text-[9px] font-medium uppercase tracking-[0.2em] text-foreground/80 ml-1 mb-1">
                 Message
               </div>
               <textarea
                 {...register("message")}
                 placeholder="Your message..."
                 rows={5}
-                className="w-full bg-card border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none placeholder:text-muted-foreground/30 text-base"
+                className="w-full bg-card border border-border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none placeholder:text-foreground/40 text-base"
               />
               {errors.message && (
                 <p className="text-xs text-red-500 ml-1">
@@ -179,7 +179,7 @@ const Contact: React.FC = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-black px-5 py-2.5 rounded-full text-xs font-medium transition-all shadow-lg shadow-primary/20 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer w-full md:w-auto justify-center"
+              className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-full text-xs font-medium transition-all shadow-lg shadow-primary/20 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer w-full md:w-auto justify-center"
             >
               <FaPaperPlane
                 size={14}

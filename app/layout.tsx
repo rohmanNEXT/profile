@@ -17,6 +17,7 @@ const RootLayout: React.FC<Readonly<{ children: React.ReactNode }>> = ({
 }) => {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head suppressHydrationWarning />
       <body className={inter.className} suppressHydrationWarning>
         <HydrationWrapper>{children}</HydrationWrapper>
       </body>

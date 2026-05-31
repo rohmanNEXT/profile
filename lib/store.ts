@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-export type Theme = "light" | "dark" | "blue" | "green";
+export type Theme = "light" | "dark";
 
 interface ThemeState {
   theme: Theme;
@@ -26,7 +26,7 @@ export const useThemeStore = create<ThemeState>()(
       onRehydrateStorage: () => (state) => {
         if (state && typeof window !== "undefined") {
           const root = window.document.documentElement;
-          root.classList.remove("light", "dark", "blue", "green");
+          root.classList.remove("light", "dark");
           root.classList.add(state.theme);
         }
       },

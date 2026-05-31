@@ -13,7 +13,7 @@ interface ProjectDetailModalProps {
 
 const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, project }) => {
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center backdrop-blur-sm p-6 bg-black/60 overflow-y-auto">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center backdrop-blur-sm p-6 bg-background/60 overflow-y-auto">
       <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -31,20 +31,20 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
           <h2 className="text-xl md:text-2xl font-medium text-foreground">
             {project.title}
           </h2>
-          <p className="text-muted-foreground text-[10px] uppercase tracking-[0.2em] font-semibold opacity-50">Fitur</p>
+          <p className="text-foreground/70 text-[10px] uppercase tracking-[0.2em] font-semibold">Fitur</p>
           <div className="w-12 h-1 bg-primary/40 mx-auto rounded-full mt-4" />
         </div>
 
 
         <div className="max-h-[400px] overflow-y-auto pr-2 mb-1 mx-1 detail-scrollbar">
           {project.testLogin && (
-            <div className="mb-10 p-5 rounded-4xl bg-white/5 border border-white/10 relative overflow-hidden group">
+            <div className="mb-10 p-5 rounded-4xl bg-white/5 border border-border relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-3xl group-hover:bg-primary/10 transition-colors duration-500" />
               <div className="relative z-10 mx-2">
                 <h3 className="text-sm font-medium text-primary uppercase tracking-wider mb-4">Test Login</h3>
                 <div className="space-y-3">
                   {project.testLogin.user && (
-                    <div className="p-4 px-5 rounded-2xl bg-primary/5 border border-primary/10">
+                    <div className="p-4 px-5 rounded-2xl bg-primary/5 border border-border">
                       <div className="flex items-center gap-2 mb-2">
                         <span className="text-[10px] bg-primary/20 text-primary px-2 py-0.5 rounded-full uppercase font-semibold tracking-wider">User</span>
                       </div>
@@ -61,9 +61,9 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
                     </div>
                   )}
                   {project.testLogin.admin && (
-                    <div className="p-4 px-5 rounded-2xl bg-primary/5 border border-primary/10">
+                    <div className="p-4 px-5 rounded-2xl bg-primary/5 border border-border">
                       <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] bg-primary/20 text-primary px-2 py-0.5 rounded-full uppercase font-semibold tracking-wider">Admin</span>
+                        <span className="text-[10px] bg-primary/30 text-primary px-2 py-0.5 rounded-full uppercase font-semibold tracking-wider">Admin</span>
                       </div>
                       <div className="space-y-3">
                         <div>
@@ -78,9 +78,9 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
                     </div>
                   )}
                   {project.testLogin.superadmin && (
-                    <div className="p-4 px-5 rounded-2xl bg-primary/5 border border-primary/10">
+                    <div className="p-4 px-5 rounded-2xl bg-primary/5 border border-border">
                       <div className="flex items-center gap-2 mb-2">
-                        <span className="text-[10px] bg-primary/20 text-primary px-2 py-0.5 rounded-full uppercase font-semibold tracking-wider">Superadmin</span>
+                        <span className="text-[10px] bg-primary/30 text-primary px-2 py-0.5 rounded-full uppercase font-semibold tracking-wider">Superadmin</span>
                       </div>
                       <div className="space-y-3">
                         <div>
@@ -106,7 +106,7 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
               {project.features?.fe.map((feat, idx) => {
                 if (typeof feat === "string") {
                   return (
-                    <li key={idx} className="text-xs text-muted-foreground">
+                    <li key={idx} className="text-xs text-foreground/70">
                       <div className="flex items-center gap-2">
                         <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
                         <span>{feat}</span>
@@ -115,14 +115,14 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
                   );
                 } else {
                   return (
-                    <li key={idx} className="text-xs text-muted-foreground space-y-1">
+                    <li key={idx} className="text-xs text-foreground/70 space-y-1">
                       <div className="flex items-center gap-2">
                         <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
-                        <span className="font-medium text-muted-foreground">{feat.title}</span>
+                        <span className="font-medium text-foreground">{feat.title}</span>
                       </div>
                       <ul className="pl-4 space-y-1">
                         {feat.items.map((item, iIdx) => (
-                          <li key={iIdx} className="text-xs text-muted-foreground flex items-center gap-2">
+                          <li key={iIdx} className="text-xs text-foreground/70 flex items-center gap-2">
                             <BsDot size={12} className="text-muted-foreground/40 flex-shrink-0" />
                             {item}
                           </li>
@@ -142,7 +142,7 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
                 {project.features?.be.map((feat, idx) => {
                   if (typeof feat === "string") {
                     return (
-                      <li key={idx} className="text-xs text-muted-foreground">
+                      <li key={idx} className="text-xs text-foreground/70">
                         <div className="flex items-center gap-2">
                           <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
                           <span>{feat}</span>
@@ -151,14 +151,14 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
                     );
                   } else {
                     return (
-                      <li key={idx} className="text-xs text-muted-foreground space-y-1">
+                      <li key={idx} className="text-xs text-foreground/70 space-y-1">
                         <div className="flex items-center gap-2">
                           <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
-                          <span className="font-medium text-muted-foreground">{feat.title}</span>
+                          <span className="font-medium text-foreground">{feat.title}</span>
                         </div>
                         <ul className="pl-4 space-y-1">
                           {feat.items.map((item, iIdx) => (
-                            <li key={iIdx} className="text-xs text-muted-foreground flex items-center gap-2">
+                            <li key={iIdx} className="text-xs text-foreground/70 flex items-center gap-2">
                               <BsDot size={12} className="text-muted-foreground/40 flex-shrink-0" />
                               {item}
                             </li>
@@ -179,7 +179,7 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
                 {project.features?.allLib.map((feat, idx) => {
                   if (typeof feat === "string") {
                     return (
-                      <li key={idx} className="text-xs text-muted-foreground">
+                      <li key={idx} className="text-xs text-foreground/70">
                         <div className="flex items-center gap-2">
                           <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
                           <span>{feat}</span>
@@ -188,14 +188,14 @@ const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ onClose, projec
                     );
                   } else {
                     return (
-                      <li key={idx} className="text-xs text-muted-foreground space-y-1">
+                      <li key={idx} className="text-xs text-foreground/70 space-y-1">
                         <div className="flex items-center gap-2">
                           <FaChevronRight size={12} className="text-primary/60 flex-shrink-0" />
-                          <span className="font-medium text-muted-foreground">{feat.title}</span>
+                          <span className="font-medium text-foreground">{feat.title}</span>
                         </div>
                         <ul className="pl-4 space-y-1">
                           {feat.items.map((item, iIdx) => (
-                            <li key={iIdx} className="text-xs text-muted-foreground flex items-center gap-2">
+                            <li key={iIdx} className="text-xs text-foreground/70 flex items-center gap-2">
                               <BsDot size={12} className="text-muted-foreground/40 flex-shrink-0" />
                               {item}
                             </li>

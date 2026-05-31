@@ -49,7 +49,7 @@ const Skills: React.FC = () => {
                     <p className="font-medium text-[9px] mb-2 tracking-tight">
                       {skill.name}
                     </p>
-                    <p className="text-[6px] text-primary font-medium bg-primary/10 px-2 py-0.5 rounded-full border border-primary/20 uppercase tracking-widest">
+                    <p className="text-[6px] text-primary font-medium bg-primary/10 px-2 py-0.5 rounded-full border border-primary/30 uppercase tracking-widest">
                       {skill.experience}
                     </p>
                   </div>

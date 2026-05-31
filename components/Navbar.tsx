@@ -32,15 +32,15 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 md:top-6 md:bottom-auto z-50 flex items-center gap-1 p-2 px-2.5 bg-[#020617]/60 backdrop-blur-[8px] rounded-full border border-black/10 dark:border-white/10">
+      <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 md:top-6 md:bottom-auto z-50 flex items-center gap-1 p-2 px-2.5 bg-background/60 backdrop-blur-[8px] rounded-full border border-border">
         {NAV_ITEMS.map((item) => (
           <button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
 className={`px-4 py-2.5 rounded-full transition-all duration-300 group relative flex items-center gap-2 cursor-pointer ${
   active === item.id
-    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20"
-    : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+    ? "bg-accent text-accent-foreground shadow-lg shadow-accent/20"
+    : "text-muted-foreground hover:bg-default hover:text-foreground"
 }`}
           >
             <item.icon size={18} strokeWidth={active === item.id ? 2.5 : 2} />
@@ -56,7 +56,7 @@ className={`text-xs font-medium uppercase tracking-wider hidden md:block ${
             {active === item.id && (
               <motion.div
                 layoutId="activeNav"
-                className="absolute inset-0 bg-primary rounded-full -z-10"
+                className="absolute inset-0 bg-accent rounded-full -z-10"
                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
               />
             )}
@@ -67,15 +67,15 @@ className={`text-xs font-medium uppercase tracking-wider hidden md:block ${
           onClick={() => setIsSettingsOpen(true)}
 className={`p-2.5 rounded-full transition-all duration-300 group relative flex items-center justify-center cursor-pointer ${
   isSettingsOpen
-    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20"
-    : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+    ? "bg-accent text-accent-foreground shadow-lg shadow-accent/20"
+    : "text-muted-foreground hover:bg-default hover:text-foreground"
 }`}
         >
           <SettingsIcon size={18} strokeWidth={isSettingsOpen ? 2.5 : 2} />
           {isSettingsOpen && (
             <motion.div
               layoutId="activeNav"
-              className="absolute inset-0 bg-primary rounded-full -z-10"
+              className="absolute inset-0 bg-accent rounded-full -z-10"
               transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
             />
           )}

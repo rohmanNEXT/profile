@@ -27,10 +27,10 @@ const About: React.FC = () => {
           className="glass p-8 rounded-4xl space-y-6 relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-3xl" />
-          <p className="text-muted-foreground/80 leading-relaxed text-[10px] md:text-xs font-light text-center tracking-tight">
-            I am <span className="text-foreground/80 font-medium">Muhammad Rachman</span> — a Web Developer focused on React, Next.js, and JavaScript. I build fast, clean, and user-friendly web applications with attention to UI/UX.
+          <p className="text-foreground/70 leading-relaxed text-[10px] md:text-xs font-light text-center tracking-tight">
+            I am <span className="text-foreground font-medium">Muhammad Rachman</span> — a Web Developer focused on React, Next.js, and JavaScript. I build fast, clean, and user-friendly web applications with attention to UI/UX.
           </p>
-          <p className="text-muted-foreground/80 leading-relaxed text-[10px] md:text-xs font-light text-center tracking-tight">
+          <p className="text-foreground/70 leading-relaxed text-[10px] md:text-xs font-light text-center tracking-tight">
             Experienced in API integration, state management, and modern architecture to produce efficient and responsive applications.
           </p>
           <div className="pt-2 text-center">
@@ -50,7 +50,7 @@ const About: React.FC = () => {
           transition={{ delay: 0.2 }}
           className="glass p-6 rounded-4xl flex flex-col items-center justify-center space-y-3 border-primary/10 max-w-xs mx-auto w-full"
         >
-          <div className="p-3 bg-primary/10 rounded-xl text-primary shadow-inner border border-primary/20 cursor-pointer">
+          <div className="p-3 bg-primary/10 rounded-xl text-primary shadow-inner border border-primary/30 cursor-pointer">
             <Award size={24} />
           </div>
           <div className="text-center space-y-1">

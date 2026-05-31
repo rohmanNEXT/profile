@@ -18,7 +18,7 @@ const CircleUi: React.FC<CircleUiProps> = ({
   return (
     <div className="relative inline-block mb-6">
       <div
-  className={`rounded-full border border-[rgba(255,255,255,0.1)] flex items-center justify-center animate-[spin_14s_linear_infinite] ${
+  className={`rounded-full border border-border flex items-center justify-center animate-[spin_14s_linear_infinite] ${
     largeCircle ? "w-48 h-48" : "w-32 h-32"
   }`}
 >

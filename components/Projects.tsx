@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
                 <h3 className="text-base font-medium tracking-tight text-foreground">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground/80 text-xs leading-relaxed font-light tracking-tight">
+                <p className="text-foreground/70 text-xs leading-relaxed font-light tracking-tight">
                   {project.description}
                 </p>
               </div>
@@ -84,7 +84,7 @@ const Projects: React.FC = () => {
                     className={`text-[7px] px-2.5 py-1 rounded-full font-medium uppercase tracking-widest border ${
                       project.title === "ToDo"
                         ? "bg-primary/35 text-primary border-primary/40"
-                        : "bg-primary/5 text-primary/80 border-primary/10"
+                        : "bg-primary/5 text-primary border-primary/30"
                     }`}
                   >
                     {tag}
@@ -113,7 +113,7 @@ const Projects: React.FC = () => {
                 </a>
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="col-span-2 lg:col-span-1 flex items-center justify-center gap-2 py-2.5 bg-primary hover:bg-primary/90 text-black rounded-full text-[10px] font-medium transition-all shadow-xl shadow-primary/10 cursor-pointer"
+                  className="col-span-2 lg:col-span-1 flex items-center justify-center gap-2 py-2.5 bg-primary hover:bg-primary/90 text-white rounded-full text-[10px] font-medium transition-all shadow-xl shadow-primary/10 cursor-pointer"
                 >
                   <FaInfoCircle size={12} />
                   Fitur

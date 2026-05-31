@@ -17,7 +17,7 @@ const Window: React.FC<WindowProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/60 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-background/80 backdrop-blur-sm">
       <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -40,56 +40,30 @@ const Window: React.FC<WindowProps> = ({ isOpen, onClose }) => {
           </p>
           <div className="w-12 h-1 bg-primary/40 mx-auto rounded-full mt-4" />
         </div>
+        <div className="flex justify-center">
+        <div className="flex flex-wrap justify-center p-2 bg-white/5 rounded-[32px] border border-border backdrop-blur-2xl shadow-inner gap-3 w-80">
+          <button
+            onClick={() => setTheme("light")}
+            className={`flex items-center gap-2 px-8 py-4 rounded-full transition-all duration-500 font-medium text-sm uppercase tracking-widest cursor-pointer ${theme === "light"
+                ? "bg-primary text-black shadow-2xl shadow-primary/40 scale-105"
+                : "text-muted-foreground hover:text-foreground"
+              }`}
+          >
+            <Sun size={20} />
+            Light
+          </button>
 
-        <div className="flex flex-wrap justify-center p-2 bg-white/5 rounded-[32px] border border-white/10 backdrop-blur-2xl shadow-inner gap-2">
-<button
-  onClick={() => setTheme("light")}
-  className={`flex items-center gap-3 px-8 py-4 rounded-[24px] transition-all duration-500 font-medium text-sm uppercase tracking-widest cursor-pointer ${
-    theme === "light"
-      ? "bg-primary text-black shadow-2xl shadow-primary/40 scale-105"
-      : "text-muted-foreground hover:text-foreground"
-  }`}
->
-  <Sun size={20} />
-  Light
-</button>
-
-<button
-  onClick={() => setTheme("dark")}
-  className={`flex items-center gap-3 px-8 py-4 rounded-[24px] transition-all duration-500 font-medium text-sm uppercase tracking-widest cursor-pointer ${
-    theme === "dark"
-      ? "bg-primary text-black shadow-2xl shadow-primary/40 scale-105"
-      : "text-muted-foreground hover:text-foreground"
-  }`}
->
-  <Moon size={20} />
-  Dark
-</button>
-
-<button
-  onClick={() => setTheme("blue")}
-  className={`flex items-center gap-3 px-8 py-4 rounded-[24px] transition-all duration-500 font-medium text-sm uppercase tracking-widest cursor-pointer ${
-    theme === "blue"
-      ? "bg-primary text-black shadow-2xl shadow-primary/40 scale-105"
-      : "text-muted-foreground hover:text-foreground"
-  }`}
->
-  <Monitor size={20} className="text-blue-500" />
-  Blue
-</button>
-
-<button
-  onClick={() => setTheme("green")}
-  className={`flex items-center gap-3 px-8 py-4 rounded-[24px] transition-all duration-500 font-medium text-sm uppercase tracking-widest cursor-pointer ${
-    theme === "green"
-      ? "bg-primary text-black shadow-2xl shadow-primary/40 scale-105"
-      : "text-muted-foreground hover:text-foreground"
-  }`}
->
-  <Monitor size={20} className="text-green-500" />
-  Green
-</button>
-        </div>
+          <button
+            onClick={() => setTheme("dark")}
+            className={`flex items-center gap-2 px-8 py-4 rounded-full transition-all duration-500 font-medium text-sm uppercase tracking-widest cursor-pointer ${theme === "dark"
+                ? "bg-primary text-black shadow-2xl shadow-primary/40 scale-105"
+                : "text-muted-foreground hover:text-foreground"
+              }`}
+          >
+            <Moon size={20} />
+            Dark
+          </button>
+        </div> </div>
       </motion.div>
     </div>
   );
