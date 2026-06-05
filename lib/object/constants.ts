@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
     image: "https://picsum.photos/seed/netflix/800/600",
     tags: ["Fullstack", "Next.js", "Express.js"],
     githubUrl: "https://github.com/rohmanNEXT/MovieNext",
-    demoUrl: "http://testing-148.my.id",
+    demoUrl: "https://hallo-4672.my.id",
     testLogin: {
       user: {
         email: "user@user.com",
@@ -136,7 +136,7 @@ export const PROJECTS: Project[] = [
     image: "https://picsum.photos/seed/sleep-penginapan/800/600",
     tags: ["Fullstack", "Next.js"],
     githubUrl: "https://github.com/rohmanNEXT/sleep-penginapan",
-    demoUrl: "http://testing-486.my.id/",
+    demoUrl: "https://486-penginapan.my.id",
         testLogin: {
       user: {
         email: "user@user.com",
