@@ -19,7 +19,7 @@ export const SKILLS: { category: string; items: Skill[] }[] = [
       { name: "Express", icon: "ex", experience: "1+ Yr" },
       { name: "Prisma", icon: "P", experience: "1+ Yr" },
       { name: "RESTful API", icon: "API", experience: "1+ Yr" },
-      { name: "Microservices", icon: "Ms", experience: "1+ Yr" },
+      { name: "Microservices", icon: "Mc", experience: "Beginner" },
     ],
   },
   {
@@ -46,7 +46,7 @@ export const SKILLS: { category: string; items: Skill[] }[] = [
       { name: "TypeScript", icon: "TS", experience: "1+ Yr" },
       { name: "VS Code", icon: "</>", experience: "4+ Yr" },
       { name: "Framer Motion", icon: "FM", experience: "Beginner" },
-      { name: "Agile Scrum", icon: "As", experience: "1+ Yr" },
+      { name: "Agile Scrum", icon: "AS", experience: "1+ Yr" },
     ],
   },
 ];
