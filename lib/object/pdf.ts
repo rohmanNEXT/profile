@@ -17,7 +17,7 @@ export const CV_SKILLS: CvSkillCategory[] = [
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express.js", "Prisma ORM", "REST API", "JWT Authentication"],
+    items: ["Node.js", "Express.js", "Prisma ORM", "RESTful API", "Microservices", "JWT Authentication"],
   },
   {
     category: "Database & Cloud",
@@ -25,7 +25,7 @@ export const CV_SKILLS: CvSkillCategory[] = [
   },
   {
     category: "Languages & Tools",
-    items: ["JavaScript", "TypeScript", "GitHub", "VS Code", "Zustand", "Framer Motion", "Shadcn UI", "HeroUI"],
+    items: ["JavaScript", "TypeScript", "GitHub", "VS Code", "Zustand", "Framer Motion", "Shadcn UI", "HeroUI", "Agile Scrum"],
   },
 ];
 
