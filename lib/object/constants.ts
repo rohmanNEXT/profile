@@ -286,7 +286,21 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
-    company: "Purwadhika Surabaya",
+    company: "Harisenin Bootcamp",
+    role: "Full Stack Developer Bootcamp",
+    period: "Feb 2026 - Aug 2026",
+    location: "Jakarta, Indonesia (Remote)",
+    duration: "6 months",
+    salary: " ",
+    category: "Full Stack Developer Bootcamp",
+    achievements: [
+      "Menyelesaikan kurikulum full stack developer dengan fokus pada JavaScript dan TypeScript",
+      "Membangun aplikasi web responsive dan integrasi API menggunakan React dan Node.js",
+      "Berkolaborasi dalam proyek tim menggunakan alur kerja Git dan metodologi Agile",
+    ],
+  },
+  {
+    company: "Purwadhika Bootcamp",
     role: "Full Stack Developer Bootcamp",
     period: "Feb 2024 - Aug 2024",
     location: "Central Surabaya, Genteng, Indonesia",
