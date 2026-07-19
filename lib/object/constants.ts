@@ -299,7 +299,6 @@ export const EXPERIENCES: Experience[] = [
     achievements: [
       "Menyelesaikan kurikulum full stack developer dengan fokus pada JavaScript dan TypeScript",
       "Membangun aplikasi web responsive dan integrasi API menggunakan React dan Node.js",
-      "Berkolaborasi dalam proyek tim menggunakan alur kerja Git dan metodologi Agile",
     ],
   },
   {
