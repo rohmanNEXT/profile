@@ -12,7 +12,6 @@ import {
 } from "react-icons/fa";
 
 import Image from "next/image";
-
 import Link from "next/link";
 
 const Hero: React.FC = () => {
@@ -29,10 +28,10 @@ const Hero: React.FC = () => {
           <div className="absolute inset-0 rounded-full border-2 border-primary shadow-[0_0_20px_rgba(139,92,246,0.2)]" />
           <div className="absolute inset-1 rounded-full overflow-hidden bg-card">
             <Image
-              src="/next.jpeg"
+              src="/next.png"
               alt="Muhammad Rachman"
-              width={128}
-              height={128}
+              width={160}
+              height={160}
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
               priority
@@ -128,7 +127,7 @@ const Hero: React.FC = () => {
             { icon: FaGithub, href: "https://github.com/rohmanNEXT" },
             {
               icon: FaLinkedin,
-              href: "https://www.linkedin.com/in/muhammad-rachman-7b61b3276/",
+              href: "https://www.linkedin.com/in/muhammad-rachman-12a556423/",
             },
             { icon: FaGlobe, href: "https://rohman-profile.vercel.app" },
           ].map((social, idx) => (

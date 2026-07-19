@@ -5,9 +5,8 @@ export const SKILLS: { category: string; items: Skill[] }[] = [
     category: "Frontend",
     items: [
       { name: "Next.js", icon: "N", experience: "2+ Yr" },
-      { name: "Vite", icon: "V", experience: "1+ Yr" },
-      { name: "React", icon: "R", experience: "1+ Yr" },
-      { name: "Cypress", icon: "Cy", experience: "1+ Yr" },
+      { name: "React (Vite)", icon: "R", experience: "1+ Yr" },
+      { name: "Jest", icon: "J", experience: "1+ Yr" },
       { name: "Css", icon: "3", experience: "4+ Yr" },
       { name: "Css Animation", icon: "3", experience: "1+ Yr" },
       { name: "Html", icon: "5", experience: "4+ Yr" },
@@ -19,7 +18,6 @@ export const SKILLS: { category: string; items: Skill[] }[] = [
       { name: "Node.js", icon: "JS", experience: "4+ Yr" },
       { name: "Express", icon: "ex", experience: "1+ Yr" },
       { name: "Prisma", icon: "P", experience: "1+ Yr" },
-      { name: "Jest", icon: "J", experience: "Beginner" },
     ],
   },
   {
@@ -27,10 +25,10 @@ export const SKILLS: { category: string; items: Skill[] }[] = [
     items: [
       { name: "Supabase", icon: "S", experience: "1+ Yr" },
       { name: "PostgreSQL", icon: "P", experience: "1+ Yr" },
-      { name: "Railway", icon: "R", experience: "1+ Yr" },
       { name: "DigitalOcean", icon: "D", experience: "1+ Yr" },
-      { name: "Hostinger", icon: "H", experience: "1+ Yr" },
       { name: "Vercel", icon: "V", experience: "2+ Yr" },
+      { name: "Nginx", icon: "Ng", experience: "1+ Yr" },
+      { name: "PM2", icon: "P2", experience: "1+ Yr" },
     ],
   },
   {
@@ -45,7 +43,7 @@ export const SKILLS: { category: string; items: Skill[] }[] = [
       { name: "GitHub", icon: "G", experience: "1+ Yr" },
       { name: "TypeScript", icon: "TS", experience: "1+ Yr" },
       { name: "VS Code", icon: "</>", experience: "4+ Yr" },
-      { name: "Motion", icon: "M", experience: "Beginner" },
+      { name: "Framer Motion", icon: "FM", experience: "Beginner" },
     ],
   },
 ];

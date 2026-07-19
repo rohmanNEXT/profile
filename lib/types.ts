@@ -71,3 +71,17 @@ export type Reference = {
   label: string;
   url: string;
 };
+
+// ---- cv ats
+export type CvSkillCategory = {
+  category: string;
+  items: string[];
+};
+
+export type CvProject = {
+  title: string;
+  description: string;
+  techStack: string[];
+  demoUrl?: string;
+  githubUrl?: string;
+};

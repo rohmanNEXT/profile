@@ -1,48 +1,110 @@
-import type { Header, Education, Experience, Reference } from "../types";
+import type { Header, Education, Experience, Reference, CvSkillCategory, CvProject } from "../types";
 
 export const HEADER: Header = {
   name: "MUHAMMAD RACHMAN",
-  role: "Web Developer Fullstack",
-  location: "Samarinda",
+  role: "Full Stack Web Developer",
+  location: "Samarinda, Kalimantan Timur, Indonesia",
   phone: "085646831030",
   email: "bluekraken9999@gmail.com",
 };
 
-export const ABOUT: string = `Web Developer dengan keahlian React, Next.js, dan JavaScript.
-Terbiasa membuat website responsive, integrasi REST API, state management,
-dan optimasi performa. Terbiasa menggunakan Git, GitHub, dan deployment Vercel.`;
+export const ABOUT: string = `Full Stack Web Developer with hands-on experience in building modern, responsive web applications using React, Next.js, Node.js, and TypeScript. Proficient in front-end development with React and Next.js, back-end development with Node.js and Express.js, database management with PostgreSQL and Prisma ORM, and cloud deployment with Vercel, DigitalOcean, and Railway. Experienced in REST API integration, state management with Zustand, UI/UX design, and unit/integration testing with Jest. Passionate about clean code, modular architecture, and delivering high-quality user experiences.`;
+
+export const CV_SKILLS: CvSkillCategory[] = [
+  {
+    category: "Frontend",
+    items: ["Next.js", "React (Vite)", "HTML5", "CSS3", "CSS Animation", "Tailwind CSS", "Responsive Design", "Jest"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Express.js", "Prisma ORM", "REST API", "JWT Authentication"],
+  },
+  {
+    category: "Database & Cloud",
+    items: ["PostgreSQL", "Supabase", "Vercel", "DigitalOcean", "Nginx", "PM2"],
+  },
+  {
+    category: "Languages & Tools",
+    items: ["JavaScript", "TypeScript", "GitHub", "VS Code", "Zustand", "Framer Motion", "Shadcn UI", "HeroUI"],
+  },
+];
 
 export const SKILLS: string = `HTML, CSS, JavaScript, React, Next.js, Tailwind CSS,
-Git, GitHub, REST API, Responsive Design`;
+GitHub, REST API, Responsive Design`;
 
-export const EDUCATION: Education = {
-  school: "Purwadhika Digital School",
-  location: "Surabaya central, Genteng",
-  major: "Web Development",
-  date: "Jun – Okt 2024",
-};
+export const EDUCATION_LIST: Education[] = [
+  {
+    school: "Harisenin Bootcamp",
+    location: "Jakarta, Indonesia (Remote)",
+    major: "Full Stack Web Development",
+    date: "Mar 2026 – Aug 2026",
+  },
+  {
+    school: "Purwadhika Bootcamp",
+    location: "Central Surabaya, Genteng, Indonesia",
+    major: "Full Stack Web Development",
+    date: "Feb 2024 – Aug 2024",
+  },
+];
 
 export const EXPERIENCES_2: Experience[] = [
   {
-  company: "Pak Suriyono Fish Farming",
-  role: "Fish Farming",
-  period: "Jan 16, 2023 - Feb 26, 2024",
-  location: "Kediri, Kalilanang, Indonesia",
-  duration: "1 Years 1 Month",
-  salary: "Rp500.000 / month",
-  category: "Fish Farming",
-  achievements: [
-    "Mengecek kondisi ikan pagi, siang, sore, dan malam",
-    "Tidak ada hari libur kecuali keadaan tertentu",
-    "Memberi makan ikan pagi, siang, dan sore",
-    "Melayani pembeli dan menyortir ikan berdasarkan ukuran saat ada pesanan",
-  ],
-}
+    company: "Pak Suriyono Fish Farming",
+    role: "Fish Farming Worker",
+    period: "Jan 2023 – Feb 2024",
+    location: "Kediri, Kalilanang, Indonesia",
+    duration: "1 Year 1 Month",
+    salary: "Rp500.000/month",
+    category: "Fish Farming",
+    achievements: [
+      "Monitored fish health during multiple daily shifts to ensure optimal conditions",
+      "Handled fish feeding schedules and maintained optimal feeding routines",
+      "Served customers and sorted fish by size for order fulfillment",
+      "Maintained high attention to detail and consistent routine execution, demonstrating operational discipline transferable to system monitoring and developer workflows",
+    ],
+  },
+];
+
+export const CV_PROJECTS: CvProject[] = [
+  {
+    title: "Movie Next",
+    description:
+      "Full-stack movie browsing platform with user authentication, subscription plans, wishlist, and admin dashboard. Includes OAuth login, payment integration, and role-based access control.",
+    techStack: ["Next.js", "Express.js", "Prisma", "PostgreSQL", "TypeScript", "Zustand", "Tailwind CSS", "JWT", "Nodemailer"],
+    demoUrl: "https://hallo-4672.my.id",
+    githubUrl: "https://github.com/rohmanNEXT/MovieNext",
+  },
+  {
+    title: "Evently CMS",
+    description:
+      "Event management platform with CMS-powered content, analytics dashboard using Umami API, event exploration with search and filtering, and responsive design.",
+    techStack: ["Next.js", "Contentful CMS", "TypeScript", "Tailwind CSS", "Recharts", "React Hook Form", "Zod"],
+    demoUrl: "https://evently-cms.vercel.app",
+    githubUrl: "https://github.com/rohmanNEXT/EventlyCms",
+  },
+  {
+    title: "To Do App",
+    description:
+      "Modern task management application with priority levels, date tracking, daily task completion status, and responsive UI with animations.",
+    techStack: ["React.js", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    demoUrl: "https://rohman-to-do.vercel.app",
+    githubUrl: "https://github.com/rohmanNEXT/ToDo",
+  },
+  {
+    title: "Sleep Penginapan",
+    description:
+      "Hotel booking and management system with accommodation reservations, coupon management, reporting, and multi-role dashboard. Features search, filtering, and payment integration.",
+    techStack: ["Next.js", "Express.js", "Prisma", "PostgreSQL", "TypeScript", "Zustand", "Tailwind CSS"],
+    demoUrl: "https://486-penginapan.my.id",
+    githubUrl: "https://github.com/rohmanNEXT/sleep-penginapan",
+  },
 ];
 
 export const REFERENCES: Reference[] = [
   { label: "GitHub", url: "https://github.com/rohmanNEXT" },
-  { label: "LinkedIn", url: "https://www.linkedin.com/in/muhammad-rachman-7b61b3276" },
+  {
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/in/muhammad-rachman-12a556423",
+  },
   { label: "Portfolio", url: "https://rohman-profile.vercel.app" },
 ];
-
