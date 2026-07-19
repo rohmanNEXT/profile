@@ -37,7 +37,7 @@ export const EDUCATION_LIST: Education[] = [
     school: "Harisenin Bootcamp",
     location: "Jakarta, Indonesia (Remote)",
     major: "Full Stack Web Development",
-    date: "Mar 2026 – Aug 2026",
+    date: "Feb 2026 – Aug 2026",
   },
   {
     school: "Purwadhika Bootcamp",
@@ -101,10 +101,10 @@ export const CV_PROJECTS: CvProject[] = [
 ];
 
 export const REFERENCES: Reference[] = [
+  { label: "Portfolio", url: "https://rohman-profile.vercel.app" },
   { label: "GitHub", url: "https://github.com/rohmanNEXT" },
   {
     label: "LinkedIn",
     url: "https://www.linkedin.com/in/muhammad-rachman-12a556423",
   },
-  { label: "Portfolio", url: "https://rohman-profile.vercel.app" },
 ];

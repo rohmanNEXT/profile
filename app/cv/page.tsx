@@ -16,8 +16,12 @@ import {
   CV_PROJECTS,
   REFERENCES,
 } from "../../lib/object/pdf";
+import { useThemeStore } from "../../lib/store";
 
 const CVPage: React.FC = () => {
+  // Access store to trigger theme rehydration on direct page load
+  useThemeStore();
+
   const page1Ref = useRef<HTMLDivElement>(null);
   const page2Ref = useRef<HTMLDivElement>(null);
 
@@ -320,7 +324,7 @@ const CVPage: React.FC = () => {
                   <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-400 border-b border-gray-700 pb-2 mb-4">
                     Online Profiles
                   </h2>
-                  <div className="flex flex-wrap gap-x-8 gap-y-2 mt-2">
+                  <div className="flex flex-col gap-y-2 mt-2">
                     {REFERENCES.map((ref, idx) => (
                       <p key={idx} className="text-xs text-gray-400">
                         <span className="font-semibold text-gray-300">
