@@ -148,7 +148,7 @@ const CVPage: React.FC = () => {
                 padding: "16mm 20mm",
                 boxSizing: "border-box",
               }}
-              className="bg-white border border-gray-200 shadow-2xl text-gray-900 font-sans flex flex-col justify-between"
+              className="bg-white border border-gray-200 shadow-md text-gray-900 font-sans flex flex-col justify-between"
             >
               <div>
                 {/* HEADER */}
@@ -257,7 +257,7 @@ const CVPage: React.FC = () => {
                 padding: "20mm",
                 boxSizing: "border-box",
               }}
-              className="bg-white border border-gray-200 shadow-2xl text-gray-900 font-sans flex flex-col justify-between"
+              className="bg-white border border-gray-200 shadow-md text-gray-900 font-sans flex flex-col justify-between"
             >
               <div>
                 {/* PROJECTS */}
