@@ -177,7 +177,7 @@ const CVPage: React.FC = () => {
                 </header>
 
                 {/* ABOUT ME */}
-                <section className="mb-6">
+                <section className="mt-4 mb-6">
                   <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-700 border-b border-gray-200 pb-2 mb-3">
                     About Me
                   </h2>
