@@ -40,7 +40,7 @@ export const SKILLS: { category: string; items: Skill[] }[] = [
       { name: "Hero Ui", icon: "H", experience: "1+ Yr" },
       { name: "Shadcn Ui", icon: "S", experience: "1+ Yr" },
       { name: "Zustand", icon: "Z", experience: "1+ Yr" },
-      { name: "Tailwind Css", icon: "T", experience: "2+ Yr" },
+      { name: "TailwindCss", icon: "T", experience: "2+ Yr" },
       { name: "GitHub", icon: "G", experience: "1+ Yr" },
       { name: "TypeScript", icon: "TS", experience: "1+ Yr" },
       { name: "VS Code", icon: "</>", experience: "4+ Yr" },
@@ -117,7 +117,7 @@ export const PROJECTS: Project[] = [
       allLib: [
         {
           title: "Frontend",
-          items: ["Next.js", "Formik", "Yup", "Axios", "React", "Zustand", "React Icon", "Tailwind Css", "Sonner"]
+          items: ["Next.js", "Formik", "Yup", "Axios", "React", "Zustand", "React Icon", "TailwindCss", "Sonner"]
         },
         {
           title: "Backend",
@@ -199,7 +199,7 @@ export const PROJECTS: Project[] = [
       allLib: [
         {
           title: "Frontend",
-          items: ["Next.js", "Formik", "Yup", "React", "Zustand", "Axios", "Tailwind Css", "Lucide React", "Cookie", "Sonner"]
+          items: ["Next.js", "Formik", "Yup", "React", "Zustand", "Axios", "TailwindCss", "Lucide React", "Cookie", "Sonner"]
         },
         {
           title: "Backend",
@@ -246,7 +246,7 @@ export const PROJECTS: Project[] = [
       allLib: [
         {
           title: "Frontend",
-          items: ["Next.js", "@heroui/react", "@coreui/react", "Framer Motion", "React Icons", "Radix Ui", "Tailwind Css", "Contentful (CMS)", "React Hook Form", "Zod", "Recharts", "ApexCharts", "React Markdown"]
+          items: ["Next.js", "@heroui/react", "@coreui/react", "Framer Motion", "React Icons", "Radix Ui", "TailwindCss", "Contentful (CMS)", "React Hook Form", "Zod", "Recharts", "ApexCharts", "React Markdown"]
         },
         {
           title: "Development",
@@ -276,7 +276,7 @@ export const PROJECTS: Project[] = [
       allLib: [
         {
           title: "Frontend",
-          items: ["React.js", "Vite", "Tailwind Css 4", "React Icons", "Motion"]
+          items: ["React.js", "Vite", "TailwindCss 4", "React Icons", "Motion"]
         },
         {
           title: "Development",
