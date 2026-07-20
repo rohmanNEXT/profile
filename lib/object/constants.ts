@@ -36,7 +36,6 @@ export const SKILLS: { category: string; items: Skill[] }[] = [
     category: "Ui & Tools",
     items: [
       { name: "JavaScript", icon: "JS", experience: "2+ Yr" },
-      { name: "Core Ui", icon: "C", experience: "1+ Yr" },
       { name: "Hero Ui", icon: "H", experience: "1+ Yr" },
       { name: "Shadcn Ui", icon: "S", experience: "1+ Yr" },
       { name: "Zustand", icon: "Z", experience: "1+ Yr" },
@@ -246,7 +245,7 @@ export const PROJECTS: Project[] = [
       allLib: [
         {
           title: "Frontend",
-          items: ["Next.js", "@heroui/react", "@coreui/react", "Framer Motion", "React Icons", "Radix Ui", "TailwindCss", "Contentful (CMS)", "React Hook Form", "Zod", "Recharts", "ApexCharts", "React Markdown"]
+          items: ["Next.js", "@heroui/react", "Framer Motion", "React Icons", "Radix Ui", "TailwindCss", "Contentful (CMS)", "React Hook Form", "Zod", "Recharts", "ApexCharts", "React Markdown"]
         },
         {
           title: "Development",
