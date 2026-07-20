@@ -137,7 +137,7 @@ const CVPage: React.FC = () => {
 
         {/* CV Content - Explicitly Paginated A4 */}
         <div className="w-full overflow-x-auto">
-          <div className="flex flex-col items-center gap-8 min-w-[900px]">
+          <div className="flex flex-col items-center gap-8 min-w-[900px] py-12 px-4">
             
             {/* PAGE 1 */}
             <div
