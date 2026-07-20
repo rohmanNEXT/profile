@@ -160,7 +160,7 @@ const CVPage: React.FC = () => {
                     {HEADER.role}
                   </p>
 
-                  <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-3 text-xs text-gray-400">
+                  <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-xs text-gray-400">
                     <span className="flex items-center gap-2">
                       <FaMapMarkerAlt className="text-violet-400/70" size={12} />
                       {HEADER.location}
