@@ -33,14 +33,14 @@ export const SKILLS: { category: string; items: Skill[] }[] = [
     ],
   },
   {
-    category: "UI & Tools",
+    category: "Ui & Tools",
     items: [
       { name: "JavaScript", icon: "JS", experience: "2+ Yr" },
-      { name: "Core UI", icon: "C", experience: "1+ Yr" },
-      { name: "HeroUI", icon: "H", experience: "1+ Yr" },
-      { name: "Shadcn UI", icon: "S", experience: "1+ Yr" },
+      { name: "Core Ui", icon: "C", experience: "1+ Yr" },
+      { name: "Hero Ui", icon: "H", experience: "1+ Yr" },
+      { name: "Shadcn Ui", icon: "S", experience: "1+ Yr" },
       { name: "Zustand", icon: "Z", experience: "1+ Yr" },
-      { name: "TailwindCSS", icon: "T", experience: "2+ Yr" },
+      { name: "Tailwind Css", icon: "T", experience: "2+ Yr" },
       { name: "GitHub", icon: "G", experience: "1+ Yr" },
       { name: "TypeScript", icon: "TS", experience: "1+ Yr" },
       { name: "VS Code", icon: "</>", experience: "4+ Yr" },
@@ -117,7 +117,7 @@ export const PROJECTS: Project[] = [
       allLib: [
         {
           title: "Frontend",
-          items: ["Next.js", "Formik", "Yup", "Axios", "React", "Zustand", "React Icon", "TailwindCSS", "Sonner"]
+          items: ["Next.js", "Formik", "Yup", "Axios", "React", "Zustand", "React Icon", "Tailwind Css", "Sonner"]
         },
         {
           title: "Backend",
@@ -199,7 +199,7 @@ export const PROJECTS: Project[] = [
       allLib: [
         {
           title: "Frontend",
-          items: ["Next.js", "Formik", "Yup", "React", "Zustand", "Axios", "TailwindCSS", "Lucide React", "Cookie", "Sonner"]
+          items: ["Next.js", "Formik", "Yup", "React", "Zustand", "Axios", "Tailwind Css", "Lucide React", "Cookie", "Sonner"]
         },
         {
           title: "Backend",
@@ -246,7 +246,7 @@ export const PROJECTS: Project[] = [
       allLib: [
         {
           title: "Frontend",
-          items: ["Next.js", "@heroui/react", "@coreui/react", "Framer Motion", "React Icons", "Radix UI", "TailwindCSS", "Contentful (CMS)", "React Hook Form", "Zod", "Recharts", "ApexCharts", "React Markdown"]
+          items: ["Next.js", "@heroui/react", "@coreui/react", "Framer Motion", "React Icons", "Radix Ui", "Tailwind Css", "Contentful (CMS)", "React Hook Form", "Zod", "Recharts", "ApexCharts", "React Markdown"]
         },
         {
           title: "Development",
@@ -258,7 +258,7 @@ export const PROJECTS: Project[] = [
   {
     title: "To Do",
     description:
-      "A simple and modern ToDo List app for managing daily tasks with a clean UI and smooth user experience.",
+      "A simple and modern ToDo List app for managing daily tasks with a clean Ui and smooth user experience.",
     image: "https://picsum.photos/seed/todo/800/600",
     tags: ["Frontend", "React.js"],
     githubUrl: "https://github.com/rohmanNEXT/ToDo",
@@ -276,7 +276,7 @@ export const PROJECTS: Project[] = [
       allLib: [
         {
           title: "Frontend",
-          items: ["React.js", "Vite", "TailwindCSS 4", "React Icons", "Motion"]
+          items: ["React.js", "Vite", "Tailwind Css 4", "React Icons", "Motion"]
         },
         {
           title: "Development",

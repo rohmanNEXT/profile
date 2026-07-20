@@ -8,7 +8,7 @@ export const HEADER: Header = {
   email: "bluekraken9999@gmail.com",
 };
 
-export const ABOUT: string = `Full Stack Web Developer with hands-on experience in building modern, responsive web applications using React, Next.js, Node.js, and TypeScript. Proficient in front-end development with React and Next.js, back-end development with Node.js and Express.js, database management with PostgreSQL and Prisma ORM, and cloud deployment with Vercel, DigitalOcean, and Railway. Experienced in REST API integration, state management with Zustand, UI/UX design, and unit/integration testing with Jest. Passionate about clean code, modular architecture, and delivering high-quality user experiences.`;
+export const ABOUT: string = `Full Stack Web Developer with hands-on experience in building modern, responsive web applications using React, Next.js, Node.js, and TypeScript. Proficient in front-end development with React and Next.js, back-end development with Node.js and Express.js, database management with PostgreSQL and Prisma ORM, and cloud deployment with Vercel, DigitalOcean, and Railway. Experienced in REST API integration, state management with Zustand, Ui/UX design, and unit/integration testing with Jest. Passionate about clean code, modular architecture, and delivering high-quality user experiences.`;
 
 export const CV_SKILLS: CvSkillCategory[] = [
   {
@@ -25,7 +25,7 @@ export const CV_SKILLS: CvSkillCategory[] = [
   },
   {
     category: "Languages & Tools",
-    items: ["JavaScript", "TypeScript", "GitHub", "VS Code", "Zustand", "Framer Motion", "Shadcn UI", "HeroUI", "Agile Scrum", "Microservices"],
+    items: ["JavaScript", "TypeScript", "GitHub", "VS Code", "Zustand", "Framer Motion", "Shadcn Ui", "Hero Ui", "Agile Scrum", "Microservices"],
   },
 ];
 
@@ -85,7 +85,7 @@ export const CV_PROJECTS: CvProject[] = [
   {
     title: "To Do App",
     description:
-      "Modern task management application with priority levels, date tracking, daily task completion status, and responsive UI with animations.",
+      "Modern task management application with priority levels, date tracking, daily task completion status, and responsive Ui with animations.",
     techStack: ["React.js", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion"],
     demoUrl: "https://rohman-to-do.vercel.app",
     githubUrl: "https://github.com/rohmanNEXT/ToDo",

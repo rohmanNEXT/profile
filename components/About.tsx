@@ -28,7 +28,7 @@ const About: React.FC = () => {
         >
           <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-3xl" />
           <p className="text-foreground/70 leading-relaxed text-[10px] md:text-xs font-light text-center tracking-tight">
-            I am <span className="text-foreground font-medium">Muhammad Rachman</span> — a Web Developer focused on React, Next.js, and JavaScript. I build fast, clean, and user-friendly web applications with attention to UI/UX.
+            I am <span className="text-foreground font-medium">Muhammad Rachman</span> — a Web Developer focused on React, Next.js, and JavaScript. I build fast, clean, and user-friendly web applications with attention to Ui/UX.
           </p>
           <p className="text-foreground/70 leading-relaxed text-[10px] md:text-xs font-light text-center tracking-tight">
             Experienced in API integration, state management, and modern architecture to produce efficient and responsive applications.
