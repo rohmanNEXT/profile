@@ -42,14 +42,14 @@ const CVPage: React.FC = () => {
       // Render Page 1 to JPEG
       const p1Url = await domToPng(page1Ref.current, {
         scale: 1.2,
-        backgroundColor: "#111111",
+        backgroundColor: "#ffffff",
         quality: 0.75,
       });
 
       // Render Page 2 to JPEG
       const p2Url = await domToPng(page2Ref.current, {
         scale: 1.2,
-        backgroundColor: "#111111",
+        backgroundColor: "#ffffff",
         quality: 0.75,
       });
 
@@ -148,29 +148,29 @@ const CVPage: React.FC = () => {
                 padding: "16mm 20mm",
                 boxSizing: "border-box",
               }}
-              className="bg-[#111111] border border-border/50 shadow-2xl text-white font-sans flex flex-col justify-between"
+              className="bg-white border border-gray-200 shadow-2xl text-gray-900 font-sans flex flex-col justify-between"
             >
               <div>
                 {/* HEADER */}
-                <header className="text-center mb-6 pb-4 border-b border-gray-700">
-                  <h1 className="text-4xl font-bold uppercase tracking-wider text-white">
+                <header className="text-center mb-6 pb-4 border-b border-gray-200">
+                  <h1 className="text-4xl font-bold uppercase tracking-wider text-gray-900">
                     {HEADER.name}
                   </h1>
-                  <p className="text-xl text-violet-400 font-medium mt-2 tracking-wide">
+                  <p className="text-xl text-violet-700 font-medium mt-2 tracking-wide">
                     {HEADER.role}
                   </p>
 
-                  <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-xs text-gray-400">
+                  <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-xs text-gray-600">
                     <span className="flex items-center gap-2">
-                      <FaMapMarkerAlt className="text-violet-400/70" size={12} />
+                      <FaMapMarkerAlt className="text-violet-600/80" size={12} />
                       {HEADER.location}
                     </span>
                     <span className="flex items-center gap-2">
-                      <FaPhone className="text-violet-400/70" size={12} />
+                      <FaPhone className="text-violet-600/80" size={12} />
                       {HEADER.phone}
                     </span>
                     <span className="flex items-center gap-2">
-                      <FaEnvelope className="text-violet-400/70" size={12} />
+                      <FaEnvelope className="text-violet-600/80" size={12} />
                       {HEADER.email}
                     </span>
                   </div>
@@ -178,26 +178,26 @@ const CVPage: React.FC = () => {
 
                 {/* ABOUT ME */}
                 <section className="mb-6">
-                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-400 border-b border-gray-700 pb-2 mb-3">
+                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-700 border-b border-gray-200 pb-2 mb-3">
                     About Me
                   </h2>
-                  <p className="text-xs text-gray-300 leading-[1.8] text-justify">
+                  <p className="text-xs text-gray-700 leading-[1.8] text-justify">
                     {ABOUT}
                   </p>
                 </section>
 
                 {/* SKILLS */}
                 <section className="mb-6">
-                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-400 border-b border-gray-700 pb-2 mb-3">
+                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-700 border-b border-gray-200 pb-2 mb-3">
                     Skills
                   </h2>
                   <div className="space-y-2.5">
                     {CV_SKILLS.map((category, idx) => (
                       <div key={idx} className="flex gap-4 text-xs leading-[1.6]">
-                        <span className="font-semibold text-gray-200 whitespace-nowrap min-w-[140px]">
+                        <span className="font-semibold text-gray-800 whitespace-nowrap min-w-[140px]">
                           {category.category}:
                         </span>
-                        <span className="text-gray-400">
+                        <span className="text-gray-600">
                           {category.items.join(", ")}
                         </span>
                       </div>
@@ -207,7 +207,7 @@ const CVPage: React.FC = () => {
 
                 {/* JOB EXPERIENCE */}
                 <section>
-                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-400 border-b border-gray-700 pb-2 mb-3">
+                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-700 border-b border-gray-200 pb-2 mb-3">
                     Job Experience
                   </h2>
                   <div className="space-y-5">
@@ -215,18 +215,18 @@ const CVPage: React.FC = () => {
                       <div key={index}>
                         <div className="flex justify-between items-start">
                           <div>
-                            <h3 className="text-sm font-bold text-white">
+                            <h3 className="text-sm font-bold text-gray-900">
                               {exp.role}
                             </h3>
-                            <p className="text-xs text-gray-400 mt-1">
+                            <p className="text-xs text-gray-600 mt-1">
                               {exp.company} — {exp.location}
                             </p>
                           </div>
                           <div className="text-right shrink-0 ml-4">
-                            <p className="text-xs text-gray-400 font-bold">
+                            <p className="text-xs text-gray-700 font-bold">
                               {exp.period}
                             </p>
-                            <p className="text-[10px] text-gray-600 font-medium">
+                            <p className="text-[10px] text-gray-500 font-medium">
                               {exp.duration}
                             </p>
                           </div>
@@ -235,7 +235,7 @@ const CVPage: React.FC = () => {
                           {exp.achievements.map((achievement, aIdx) => (
                             <li
                               key={aIdx}
-                              className="text-xs text-gray-400 leading-[1.6] pl-5 relative before:content-['•'] before:absolute before:left-0 before:text-violet-400/60"
+                              className="text-xs text-gray-600 leading-[1.6] pl-5 relative before:content-['•'] before:absolute before:left-0 before:text-violet-700/60"
                             >
                               {achievement}
                             </li>
@@ -257,32 +257,32 @@ const CVPage: React.FC = () => {
                 padding: "20mm",
                 boxSizing: "border-box",
               }}
-              className="bg-[#111111] border border-border/50 shadow-2xl text-white font-sans flex flex-col justify-between"
+              className="bg-white border border-gray-200 shadow-2xl text-gray-900 font-sans flex flex-col justify-between"
             >
               <div>
                 {/* PROJECTS */}
                 <section className="mb-8">
-                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-400 border-b border-gray-700 pb-2 mb-4">
+                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-700 border-b border-gray-200 pb-2 mb-4">
                     Projects
                   </h2>
                   <div className="space-y-4">
                     {CV_PROJECTS.map((project, idx) => (
                       <div key={idx}>
                         <div className="flex items-baseline gap-3">
-                          <h3 className="text-xs font-bold text-white">
+                          <h3 className="text-xs font-bold text-gray-900">
                             {project.title}
                           </h3>
                           {project.demoUrl && (
-                            <span className="text-[10px] text-gray-600">
+                            <span className="text-[10px] text-gray-500">
                               {project.demoUrl}
                             </span>
                           )}
                         </div>
-                        <p className="text-[11px] text-gray-400 leading-[1.6] mt-1">
+                        <p className="text-[11px] text-gray-600 leading-[1.6] mt-1">
                           {project.description}
                         </p>
-                        <p className="text-[10px] text-gray-500 mt-1.5">
-                          <span className="font-semibold text-gray-400">Tech Stack:</span>{" "}
+                        <p className="text-[10px] text-gray-600 mt-1.5">
+                          <span className="font-semibold text-gray-800">Tech Stack:</span>{" "}
                           {project.techStack.join(", ")}
                         </p>
                       </div>
@@ -292,7 +292,7 @@ const CVPage: React.FC = () => {
 
                 {/* EDUCATION */}
                 <section className="mb-8">
-                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-400 border-b border-gray-700 pb-2 mb-4">
+                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-700 border-b border-gray-200 pb-2 mb-4">
                     Education
                   </h2>
                   <div className="space-y-5">
@@ -300,17 +300,17 @@ const CVPage: React.FC = () => {
                       <div key={index}>
                         <div className="flex justify-between items-start">
                           <div>
-                            <h3 className="text-xs font-bold text-white">
+                            <h3 className="text-xs font-bold text-gray-900">
                               {edu.school}
                             </h3>
-                            <p className="text-xs text-gray-400 mt-1">
+                            <p className="text-xs text-gray-600 mt-1">
                               {edu.major}
                             </p>
-                            <p className="text-[10px] text-gray-500 mt-1">
+                            <p className="text-[10px] text-gray-600 mt-1">
                               {edu.location}
                             </p>
                           </div>
-                          <p className="text-xs text-gray-400 font-bold shrink-0 ml-4">
+                          <p className="text-xs text-gray-700 font-bold shrink-0 ml-4">
                             {edu.date}
                           </p>
                         </div>
@@ -321,13 +321,13 @@ const CVPage: React.FC = () => {
 
                 {/* ONLINE PROFILES */}
                 <section>
-                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-400 border-b border-gray-700 pb-2 mb-4">
+                  <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-violet-700 border-b border-gray-200 pb-2 mb-4">
                     Online Profiles
                   </h2>
                   <div className="flex flex-col gap-y-2 mt-2">
                     {REFERENCES.map((ref, idx) => (
-                      <p key={idx} className="text-xs text-gray-400">
-                        <span className="font-semibold text-gray-300">
+                      <p key={idx} className="text-xs text-gray-600">
+                        <span className="font-semibold text-gray-800">
                           {ref.label}:
                         </span>{" "}
                         {ref.url}
